@@ -1,0 +1,41 @@
+<button type="submit" value="get" (click)="getData()">
+  GET TODO
+</button>
+
+<div *ngFor="let todo of model; let i=index">
+  <tr >
+    <td>
+      {{todo.id}}
+    </td>
+    <td>
+      {{todo.title}}
+    </td>
+    <td>
+      {{todo.completed}}
+    </td>
+  </tr>
+</div>
+<!-- 
+<button type="submit" value="get" (click)="getUsers()">
+  GET USERS
+</button>
+
+<button type="submit" value="get" (click)="loadTodos()">
+  GET Axios Todo
+</button>
+
+<button type="submit" value="get" (click)="getTodo()">
+  Axios Todo Get
+</button>
+
+<button type="submit" value="get" (click)="getUser()">
+  Login
+</button>
+
+<button type="submit" value="get" (click)="signUp()">
+  Sign Up
+</button>
+
+<button type="submit" value="get" (click)="loginUser()">
+  Login observable
+</button> -->
